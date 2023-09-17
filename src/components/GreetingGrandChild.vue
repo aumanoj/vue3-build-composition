@@ -1,7 +1,7 @@
 <template>
   <div>
     <span>Grand Child Component</span>
-    <h1>{{ greeting }}</h1>
+    <h1>{{ parentMessage }}</h1>
   </div>
 </template>
 
@@ -9,8 +9,5 @@
   import { inject } from 'vue';
   /* Catch the provide data from grand parent component */
   const parentMessage = inject('parentMessage');
-  const props = defineProps({
-    greeting:String
-  })
 </script>
   

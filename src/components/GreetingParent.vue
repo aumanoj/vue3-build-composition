@@ -2,7 +2,7 @@
   <span>Parent Component</span>
   <h1>{{ message }}</h1>
   <!-- Included Child Component -->
-  <GreetingChild :greeting="message" />
+  <GreetingChild :greeting="parentMessage" />
 </template> 
 <script setup>
 /* Provide also known as props drilling means dirent to pass data to grand child */
