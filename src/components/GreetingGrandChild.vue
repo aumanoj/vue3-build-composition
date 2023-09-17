@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box">
     <span>Grand Child Component</span>
     <h1>{{ parentMessage }}</h1>
   </div>
