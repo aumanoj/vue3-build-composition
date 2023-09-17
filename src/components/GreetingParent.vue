@@ -1,8 +1,8 @@
 <template>
+  <span>Parent Component</span>
   <h1>{{ message }}</h1>
-  <p>Parent Component</p>
   <!-- Included Child Component -->
-  <GreetingChild :greeting="parentMessage" />
+  <GreetingChild :greeting="message" />
 </template> 
 <script setup>
 /* Provide also known as props drilling means dirent to pass data to grand child */

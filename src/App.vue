@@ -4,6 +4,7 @@
   <p>Count: {{ count }}</p>
   <button @click="count++">Increment Count</button>
   <!-- Included Parent component with props-->
+  <hr/>
   <GreetingParent :message="greetingMessage" />
 </template>
 
