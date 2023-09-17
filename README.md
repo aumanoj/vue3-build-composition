@@ -13,6 +13,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## For build run cmd - `npm run build`
 
 
+## I have used Provide/Inject for data passing
 
 Process to execute the project -
 1. Extract the zip file.
