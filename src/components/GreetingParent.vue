@@ -1,21 +1,14 @@
 <template>
   <div class="box">
   <span>Parent Component</span>
-  <h1>{{ message }}</h1>
+  <h1>{{ parentMessage }}</h1>
   <!-- Included Child Component -->
-  <GreetingChild :greeting="parentMessage" />
+  <GreetingChild />
 </div>
 </template> 
 <script setup>
-/* Provide also known as props drilling means dirent to pass data to grand child */
-import { provide } from 'vue';
+import { inject } from 'vue';
 import GreetingChild from './GreetingChild.vue';
-/* Defined props here */
-const props = defineProps({
-  message: String,
-})
-const parentMessage = 'Greeting from GreetingParent.vue'
-provide('parentMessage', parentMessage);
-
+const parentMessage = inject('parentMessage');
 </script>
   

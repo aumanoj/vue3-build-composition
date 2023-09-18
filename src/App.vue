@@ -3,13 +3,16 @@
   <!-- Count sample  -->
   <p>Count: {{ count }}</p>
   <button @click="count++">Increment Count</button>
-  <!-- Included Parent component with props-->
-  <GreetingParent :message="greetingMessage" />
+  <!-- Included Parent component-->
+  <GreetingParent />
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { provide,ref } from 'vue';
+import {  } from 'vue';
 import GreetingParent from './components/GreetingParent.vue';
   const count = ref(0);
-  const greetingMessage = 'Greeting from App.vue';
+  const parentMessage = 'Greeting from app.vue'
+  /* Provide used for the direct data pass to grand child */
+  provide('parentMessage', parentMessage);
 </script>
