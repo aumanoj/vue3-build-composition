@@ -7,10 +7,10 @@
 </template>
 
 <script setup>
-  import { provide } from 'vue'
+  import { provide,ref } from 'vue'
   import Counter from './components/Counter.vue'
   import GreetingParent from './components/GreetingParent.vue'
-  const parentMessage = 'Greeting from app.vue'
+  const parentMessage = ref('Greeting from app.vue')
   /* Provide used for the direct data pass to grand child */
   provide('parentMessage', parentMessage)
 </script>

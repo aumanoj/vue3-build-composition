@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 ## Before run the project pls run the cmd - `npm install`
 
-## Afetr that run the cmd - `npm run dev`
+## After that run the cmd - `npm run dev`
 
 ## For build run cmd - `npm run build`
 
@@ -21,6 +21,9 @@ Process to execute the project -
 3. Run cmd  - ` npm run dev` for build
 4. Run cmd - `npm run build`
 
+
+## For more details to setup the project follow the [link]
+(https://docs.google.com/document/d/1gVmPjutgowvAeOq5thPpMfZXnl03gDmH8-50MYXiiys/edit?usp=sharing)
 
 
 

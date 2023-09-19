@@ -7,7 +7,7 @@
   </div>
 </template> 
 <script setup>
-  import { inject } from 'vue'
+  import { inject,ref } from 'vue'
   import GreetingChild from './GreetingChild.vue'
   const parentMessage = inject('parentMessage')
 </script>
